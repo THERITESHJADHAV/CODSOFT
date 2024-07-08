@@ -1,0 +1,419 @@
+<HTML>
+     <HEAD>
+        <LINK REL="SHORTCUT ICON" TYPE="X-ICON" HREF="LOGO.png">
+        <!--- CSS SCRIPT --->
+        <LINK REL="STYLESHEET" HREF="STYLE.CSS"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <TITLE>RITZII</TITLE>
+    </HEAD>
+    <BODY>
+        <DIV CLASS="HEADER" ID="header">
+            <DIV CLASS="CONTAINER">
+                <NAV>
+                    <IMG SRC="LOGO_BLACK.png" CLASS="logo">
+                    <UL id="sidemenu">
+                        <LI><A HREF="#header">HOME</A></LI>
+                        <LI><A HREF="#about">ABOUT</A></LI>
+                        <LI><A HREF="#services">SERVICES</A></LI>
+                        <LI><A HREF="#projects">PORTFOLIO</A></LI>
+                        <LI><A HREF="#contact">CONTACT</A></LI>
+                        <LI><i class="fa-solid fa-xmark" onclick="closemenu()"></i></LI>
+                    </UL>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>                 <!---------MENU BUTTON FOR RESPONSIVE HAMBURGER-->
+                </NAV>
+                <!--- END OF NAVBAR --->
+                <DIV CLASS="HEADER_TEXT">
+                    <IMG CLASS="HOME_IMAGE" SRC="PROFILE_BLACK.jpg">
+                    <DIV CLASS="HOME_CONTENT">
+                        <H3>Hello, It's Me</H3>
+                        <H1>RITESH JADHAV</H1>
+                        <H3>And I'm a <SPAN CLASS="multiple-text">FRONTEND DEVELOPER</SPAN></H3>
+                        <P>Aspiring Computer Engineer with a passion for technology and problem-solving</P>
+                        <DIV CLASS="SOCIAL-MEDIA">
+                            <A HREF="https://www.linkedin.com/in/ritesh-jadhav292005/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></A>
+                            <A HREF="https://x.com/RITESHJ2912" target="_blank"><ion-icon name="logo-twitter"></ion-icon></A>
+                            <A HREF="https://www.instagram.com/ritesh.jadhavv/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></A>
+                            <A HREF="https://www.facebook.com/profile.php?id=100068175939233" target="_blank"><ion-icon name="logo-facebook"></ion-icon></A>
+                            <A HREF="https://github.com/THERITESHJADHAV" target="_blank"><ion-icon name="logo-github"></ion-icon></A>
+                            <A HREF="https://leetcode.com/u/oqTdg0prvu/" target="_blank"><ion-icon name="logo-web-component"></ion-icon></A>
+                        </DIV>
+                        <DIV CLASS="CV">
+                            <A HREF="Resume-Ritesh Jadhav.pdf" DOWNLOAD CLASS="BTN">DOWNLOAD CV</A>            <!--- FOR DOWNLOADING ADD THAT PDF PATH IN HREF, AND ADD DOWNLOAD AFTER THAT-->
+                        </DIV>
+                    </DIV>
+                </DIV>
+            </DIV>
+        </DIV>
+               <!----- ABOUT ME SECTION ---->
+        <DIV ID="about">
+            <DIV CLASS="CONTAINER">
+                <DIV CLASS="ROW">
+                    <DIV CLASS="ABOUT_COLUMN_1">
+                        <IMG SRC="AI_FORMAL.jpg">
+                    </DIV>
+                    <DIV CLASS="ABOUT_COLUMN_2">
+                        <H1>ABOUT <SPAN CLASS="RED">ME</SPAN></H1>
+                        <P>A Learner who seeks to gather knowledge and to gain experience under different circumstances. Currently a first-year student, I'm eager to apply my strong foundation in coding and hardware design to real-world projects. Excited about the opportunity to contribute to the advancement of technology and make a meaningful impact in the industry.</P>
+                        <DIV CLASS="TAB_TITLES">
+                            <P CLASS="TAB_LINKS ACTIVE_LINK" ONCLICK="opentab('skills')">Skills</P>
+                            <P CLASS="TAB_LINKS" ONCLICK="opentab('experience')">Experience</P>
+                            <P CLASS="TAB_LINKS" ONCLICK="opentab('education')">Education</P>
+                            <P CLASS="TAB_LINKS" ONCLICK="opentab('Qualities')">Qualities</P>
+                            <P CLASS="TAB_LINKS" ONCLICK="opentab('Certificates')">Certificates</P>
+                        </DIV>
+                        <DIV CLASS="TAB_CONTENTS ACTIVE_TAB" id="skills">
+                            <UL>
+                                <LI><SPAN>Programming Languages:</SPAN><BR>C ,C++ ,Python</LI>
+                                <LI><SPAN>Web Development:</SPAN><BR>HTML ,CSS ,JavaScript ,Node.js</LI>
+                                <LI><SPAN>UI/UX Designing:</SPAN><BR>Figma, Logo Design</LI>
+                            </UL>
+                        </DIV>
+                        <DIV CLASS="TAB_CONTENTS" id="experience">
+                            <UL>
+                                <LI><SPAN>June 2024 - Current</SPAN><BR>Web Designing Internship at Oasis Infobyte</LI>
+                                <LI><SPAN>June 2024 - Current</SPAN><BR>JavaScript Development Internship at CodSoft</LI>
+                            </UL>
+                        </DIV>
+                        <DIV CLASS="TAB_CONTENTS" id="education">
+                            <UL>
+                                <LI><SPAN>2023 - Current</SPAN><BR>Bachelor of Engineering - BE, Computer Science<BR>Vidyavardhini's College of Engineering and Technology</LI>
+                                <LI><SPAN>2021 - 2023</SPAN><BR>high school secondary certificate program<BR>Thakur College of Science & Commerce</LI>
+                                <LI><SPAN>2021</SPAN><BR>Secondary School Certificate Program<BR>Suvidyalaya School</LI>
+                            </UL>
+                        </DIV>
+                        <DIV CLASS="TAB_CONTENTS" id="Qualities">
+                        </DIV>
+                        <DIV CLASS="TAB_CONTENTS" id="Certificates">
+                        </DIV>
+                    </DIV>
+                </DIV>
+            </DIV>
+        </DIV>
+        <!--- MY SERVICES SECTION --->
+        <DIV id="services">
+            <DIV CLASS="CONTAINER">
+                <H1 CLASS="MIDDLE">MY <SPAN CLASS="RED">SERVICES</SPAN></H1>
+                <DIV CLASS="SERVICES_LIST">
+                    <DIV>
+                        <i class="fa-solid fa-laptop"></i>
+                        <H2>Web Design</H2>
+                        <P>I create custom, responsive websites that blend stunning visuals with intuitive user experiences. From elegant landing pages to dynamic e-commerce platforms, I tailor each project to meet your unique business needs. Let’s craft a website that captivates your audience and boosts your online presence.</P>
+                        <a href="#" CLASS="BTN_SERVICES">Learn more</a>
+                    </DIV>
+                    <DIV>
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <H2>UI/UX Design</H2>
+                        <P>I specialize in creating user-friendly interfaces that combine aesthetics with functionality. Through careful research and innovative design, I develop intuitive and engaging user experiences for websites and mobile apps. Let’s enhance your digital product with seamless interactions and compelling visuals.</P>
+                        <a href="#" CLASS="BTN_SERVICES">Learn more</a>
+                    </DIV>
+                    <DIV>
+                        <i class="fa-brands fa-slack"></i>
+                        <H2>Logo Design</H2>
+                        <P>I craft unique and memorable logos that capture the essence of your brand. By blending creativity with strategic design, I create logos that stand out and make a lasting impression. Let’s develop a powerful visual identity that resonates with your audience and sets your brand apart.</P>
+                        <a href="#" CLASS="BTN_SERVICES">Learn more</a>
+                    </DIV>
+                </DIV>
+            </DIV>
+        </DIV>
+        <!--- MY PROJECTS ----->
+        <DIV ID="projects">
+            <DIV class="CONTAINER">
+                <H1 CLASS="MIDDLE">LATEST <SPAN CLASS="RED">PROJECTS</SPAN></H1>
+                <div class="container">
+                    <div class="products-container">
+                        <div class="product" data-name="p-1">
+                            <img src="PROJRCT IMAGES/TASKNOVA/TASKNOVA_IMG_1.png" alt="">
+                            <h3>TASKNOVA</h3>
+                            <I class="hello">A To-Do-List</I>
+                            <P>Created a dynamic and user-friendly to-do list website using JavaScript, HTML, and CSS. This project allows users to effortlessly manage their tasks with features like adding, editing, and deleting items. The responsive design ensures seamless usability across various devices.</P>
+                       </div>
+                       <div class="product center" data-name="p-2">
+                            <img src="PROJRCT IMAGES/HOMEHAVEN/HOMEHAVEN_IMG_1.png" alt="">
+                            <h3>HOMEHAVEN</h3>
+                            <I>Real Estate website</I>
+                            <P>Created HomeHaven, a sophisticated real estate website for luxury properties in Mumbai and Pune. Utilizing HTML, CSS, and JavaScript. Features include advanced search options, ensuring a seamless and elegant browsing experience across all devices.</P>
+                       </div>    
+                       <div class="product" data-name="p-3">
+                        <img src="PROJRCT IMAGES/TEMPERATURE CONVERTER/TEMPERATURE CONVERTER_1.png" alt="">
+                        <h3>TEMPEASE</h3>
+                        <I class="hello">TEMP CONVERT</I>
+                        <P>Created TempEase, a user-friendly temperature converter using HTML, CSS, and JavaScript. This tool allows seamless conversion between Celsius, Fahrenheit, and Kelvin, with an intuitive interface and responsive design for optimal usability across all devices.</P>
+                       </div>
+                       <div class="product" data-name="p-4">
+                        <img src="PROJRCT IMAGES/CALCULATOR/CALCULATOR_1.png" alt="">
+                        <h3 class="center_2">CALCII</h3>
+                        <I class="hello">Calculator</I>
+                        <P>Develop a user-friendly calculator website using HTML, CSS, and JavaScript, designed to provide an intuitive platform for performing essential mathematical calculations effortlessly. Ideal for quick computations on desktops, tablets, and mobile devices, this calculator ensures accessibility and efficiency for users on the go.</P>
+                       </div>
+                   </div>
+                    </div>
+                </div> 
+                <div class="products-preview">
+                    <div class="preview" data-target="p-1">
+                        <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                        <DIV CLASS="ROW">
+                            <DIV CLASS="PREVIEW_LEFT">
+                                <IMG SRC="PROJRCT IMAGES/TASKNOVA/TASKNOVA_IMG_1.png">
+                                <IMG SRC="PROJRCT IMAGES/TASKNOVA/TASKNOVA_IMG_2.png">
+                                <IMG SRC="PROJRCT IMAGES/TASKNOVA/TASKNOVA_IMG_3.png">
+                            </DIV>
+                            <DIV CLASS="PREVIEW_RIGHT">
+                                <h3>TASKNOVA</h3>
+                                <div class="stars">
+                                    <SPAN> PROJECT RATING :</SPAN>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <DIV CLASS="PROJECT_LINKS">
+                                    <H4><i class="fa-solid fa-feather-pointed"></i> PROJECT LINK</H4>
+                                    <P>DIRECT PROJECT LINK: </P>
+                                    <P>GITHUB RESPORTIVE LINK: </P>
+                                </DIV>
+                                <DIV CLASS="PROJECT_OVERVIEW">
+                                    <H4><i class="fa-solid fa-feather-pointed"></i> PROJECT OVERVIEW</H4>
+                                    <P>This project is a user-friendly to-do list website designed to help users efficiently manage their tasks. Users can easily note down their tasks and delete them once completed, ensuring an organized and clutter-free task management experience. Clicking on a task will mark it with a line, visually indicating its completion. Additionally, tasks can be deleted from the list by clicking a cross button.</P>
+                                </DIV>
+                                <DIV CLASS="FEATURES">
+                                    <DIV CLASS="FEATURES_LEFT">
+                                        <H4><i class="fa-solid fa-feather-pointed"></i> FEATURES</H4>
+                                        <div class="scrollable-div">
+                                            <P><SPAN>Task Noting: </SPAN> Easily add tasks to the list for efficient task management.<BR>
+                                                <SPAN>Task Completion: </SPAN> Click on a task to mark it with a line, indicating its completion.<BR>
+                                                <SPAN>Task Deletion: </SPAN> Remove tasks from the list by clicking a cross button.<BR>
+                                                <SPAN>Multiple Lists: </SPAN> Users can create different lists according to different days of the week.<BR>
+                                                <SPAN>User-Friendly Interface: </SPAN> Simple and intuitive design for easy navigation and use.
+                                            </P>
+                                        </div>    
+                                    </DIV>
+                                    <DIV CLASS="FEATURES_RIGHT">
+                                        <H4><i class="fa-solid fa-feather-pointed"></i> UPCOMING FEATURES</H4>
+                                        <div class="scrollable-div">
+                                            <P><SPAN>Task Prioritization: </SPAN>Assign priority levels to tasks. <BR>
+                                                <SPAN>Due Dates: </SPAN>Set and manage due dates for tasks. <BR>
+                                                <SPAN>Reminders: </SPAN>Receive notifications for upcoming tasks. <BR>
+                                                <SPAN>Subtasks: </SPAN>Break down tasks into smaller, manageable subtasks. <BR>
+                                                <SPAN>Task Descriptions: </SPAN>Add detailed descriptions to tasks. <BR>
+                                                <SPAN>Attachments: </SPAN>Attach links and PDFs to specific tasks. <BR>
+                                                <SPAN>Dark Mode: </SPAN>Toggle between light and dark themes. <BR>
+                                            </P>
+                                        </div> 
+                                    </DIV>
+                                </DIV>
+                            </DIV>
+                        </DIV>
+                    </div>
+                    <div class="preview" data-target="p-2">
+                        <i class="fas fa-times"></i>
+                        <DIV CLASS="ROW">
+                            <DIV CLASS="PREVIEW_LEFT">
+                                <IMG SRC="PROJRCT IMAGES/HOMEHAVEN/HOMEHAVEN_IMG_1.png">
+                                <IMG SRC="PROJRCT IMAGES/HOMEHAVEN/HOMEHAVEN_IMG_2.png">
+                                <IMG SRC="PROJRCT IMAGES/HOMEHAVEN/HOMEHAVEN_IMG_3.png">
+                            </DIV>
+                            <DIV CLASS="PREVIEW_RIGHT">
+                                <h3>HOMEHAVEN</h3>
+                                <div class="stars">
+                                    <SPAN> PROJECT RATING :</SPAN>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <DIV CLASS="PROJECT_LINKS">
+                                    <H4><i class="fa-solid fa-feather-pointed"></i> PROJECT LINK</H4>
+                                    <P>DIRECT PROJECT LINK: </P>
+                                    <P>GITHUB RESPORTIVE LINK: </P>
+                                </DIV>
+                                <DIV CLASS="PROJECT_OVERVIEW">
+                                    <H4><i class="fa-solid fa-feather-pointed"></i> PROJECT OVERVIEW</H4>
+                                    <P>HomeHaven is a sophisticated and user-friendly real estate website designed to cater to the high-end property market in Mumbai and Pune. This project aims to offer an intuitive platform for potential buyers and renters to explore luxury villas and commercial office spaces, providing them with comprehensive property details, high-resolution images, and a seamless browsing experience.</P>
+                                </DIV>
+                                <DIV CLASS="FEATURES">
+                                    <DIV CLASS="FEATURES_LEFT">
+                                        <H4><i class="fa-solid fa-feather-pointed"></i> FEATURES</H4>
+                                        <div class="scrollable-div">
+                                            <P><SPAN>Elegant and Modern Design: </SPAN> Clean, intuitive layout that enhances user experience.<BR>
+                                                <SPAN>Comprehensive Property Listings: </SPAN> Detailed descriptions, high-resolution images, and virtual tours.<BR>
+                                                <SPAN>Customer Testimonials: </SPAN> Insights from past clients to build credibility.<BR>
+                                                <SPAN>Contact and Support:  </SPAN> Easy-to-find contact information and responsive support team.<BR>
+                                                <SPAN>Photo Galleries:  </SPAN> Extensive galleries with high-resolution images for each property.
+                                            </P>
+                                        </div>    
+                                    </DIV>
+                                    <DIV CLASS="FEATURES_RIGHT">
+                                        <H4><i class="fa-solid fa-feather-pointed"></i> UPCOMING FEATURES</H4>
+                                        <div class="scrollable-div">
+                                            <P><SPAN>Enhanced Chat Support: </SPAN>Real-time assistance with AI and live agents. <BR>
+                                                <SPAN>User Reviews and Ratings: </SPAN>Allow users to leave reviews and rate properties and services. <BR>
+                                                <SPAN>Custom Alerts: </SPAN>Notify users of new listings and price changes in their preferred locations. <BR>
+                                                <SPAN>Mobile App: </SPAN>Dedicated app for enhanced mobile experience and push notifications. <BR>
+                                                <SPAN>3D Floor Plans: </SPAN>Interactive 3D models of property layouts. <BR>
+                                                <SPAN>Advanced Search and Filter Options: </SPAN>Find properties by location, price range, property type, and amenities. <BR>
+                                                <SPAN>Integration with Calendar: </SPAN>Schedule property viewings and appointments directly. <BR>
+                                            </P>
+                                        </div> 
+                                    </DIV>
+                                </DIV>
+                            </DIV>
+                        </DIV>
+                    </div>
+                    <div class="preview" data-target="p-3">
+                        <i class="fas fa-times"></i>
+                        <DIV CLASS="ROW">
+                            <DIV CLASS="PREVIEW_LEFT">
+                                <IMG SRC="PROJRCT IMAGES/TEMPERATURE CONVERTER/TEMPERATURE CONVERTER_1.png">
+                                <IMG SRC="PROJRCT IMAGES/TEMPERATURE CONVERTER/TEMPERATURE CONVERTER_2.png">
+                                <IMG SRC="PROJRCT IMAGES/TEMPERATURE CONVERTER/TEMPERATURE CONVERTER_3.png">
+                            </DIV>
+                            <DIV CLASS="PREVIEW_RIGHT">
+                                <h3>TEMPERATURE CONVERTER</h3>
+                                <div class="stars">
+                                    <SPAN> PROJECT RATING :</SPAN>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <DIV CLASS="PROJECT_LINKS">
+                                    <H4><i class="fa-solid fa-feather-pointed"></i> PROJECT LINK</H4>
+                                    <P>DIRECT PROJECT LINK: </P>
+                                    <P>GITHUB RESPORTIVE LINK: </P>
+                                </DIV>
+                                <DIV CLASS="PROJECT_OVERVIEW">
+                                    <H4><i class="fa-solid fa-feather-pointed"></i> PROJECT OVERVIEW</H4>
+                                    <P>TempEase is a simple yet efficient and highly functional temperature converter designed to provide users with swift and precise conversions between Celsius, Fahrenheit, and Kelvin. This project is built using HTML, CSS, and JavaScript, creating an efficient and user-friendly tool with a focus on simplicity and accuracy. Whether you are a student, professional, or simply in need of quick temperature conversions, TempEase delivers a seamless experience.</P>
+                                </DIV>
+                                <DIV CLASS="FEATURES">
+                                    <DIV CLASS="FEATURES_LEFT">
+                                        <H4><i class="fa-solid fa-feather-pointed"></i> FEATURES</H4>
+                                        <div class="scrollable-div">
+                                            <P><SPAN>User-Friendly Interface: </SPAN> Clean, intuitive design for easy navigation.<BR>
+                                                <SPAN>Accurate Conversions: </SPAN> Reliable algorithms for precise temperature conversions between Celsius, Fahrenheit, and Kelvin.<BR>
+                                                <SPAN>Responsive Design: </SPAN> Ensures optimal performance on desktops, tablets, and smartphones.<BR>
+                                                <SPAN>Real-Time Conversion: </SPAN> Instant results as users input values.<BR>
+                                                <SPAN>Lightweight and Fast: </SPAN> Optimized to load quickly and perform conversions without delay.
+                                            </P>
+                                        </div>    
+                                    </DIV>
+                                    <DIV CLASS="FEATURES_RIGHT">
+                                        <H4><i class="fa-solid fa-feather-pointed"></i> UPCOMING FEATURES</H4>
+                                        <div class="scrollable-div">
+                                            <P><SPAN>History Log: </SPAN> Track and view previous conversions.<BR>
+                                                <SPAN>Temperature Graphs: </SPAN> Visual representation of temperature changes and comparisons.<BR>
+                                                <SPAN>Desktop Widget: </SPAN>  Quick access desktop widget for instant conversions.<BR>
+                                                <SPAN>Advanced Scientific Conversions: </SPAN> Include additional scientific temperature units like Rankine and Réaumur.<BR>
+                                                <SPAN>Conversion Tips and Tricks: </SPAN> Contextual tips to help users understand temperature conversions better.<BR>
+                                            </P>
+                                        </div> 
+                                    </DIV>
+                                </DIV>
+                            </DIV>
+                        </DIV>
+                    </div>
+                    <div class="preview" data-target="p-4">
+                        <i class="fas fa-times"></i>
+                        <DIV CLASS="ROW">
+                            <DIV CLASS="PREVIEW_LEFT">
+                                <IMG SRC="PROJRCT IMAGES/CALCULATOR/CALCULATOR_1.png">
+                                <IMG SRC="PROJRCT IMAGES/CALCULATOR/CALCULATOR_2.png">
+                                <IMG SRC="PROJRCT IMAGES/CALCULATOR/CALCULATOR_3.png">
+                            </DIV>
+                            <DIV CLASS="PREVIEW_RIGHT">
+                                <h3>CALCULATOR</h3>
+                                <div class="stars">
+                                    <SPAN> PROJECT RATING :</SPAN>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <DIV CLASS="PROJECT_LINKS">
+                                    <H4><i class="fa-solid fa-feather-pointed"></i> PROJECT LINK</H4>
+                                    <P>DIRECT PROJECT LINK: </P>
+                                    <P>GITHUB RESPORTIVE LINK: </P>
+                                </DIV>
+                                <DIV CLASS="PROJECT_OVERVIEW">
+                                    <H4><i class="fa-solid fa-feather-pointed"></i> PROJECT OVERVIEW</H4>
+                                    <P>The Calculator website is designed to provide users with a straightforward tool for performing basic arithmetic operations directly from their browser. It aims to offer a clean and intuitive user interface that enhances usability and efficiency.</P>
+                                </DIV>
+                                <DIV CLASS="FEATURES">
+                                    <DIV CLASS="FEATURES_LEFT">
+                                        <H4><i class="fa-solid fa-feather-pointed"></i> FEATURES</H4>
+                                        <div class="scrollable-div">
+                                            <P><SPAN>Basic Arithmetic Operations: </SPAN> Addition, subtraction, multiplication, and division.<BR>
+                                                <SPAN>Responsive Design: </SPAN> Ensures usability across various devices and screen sizes.<BR>
+                                                <SPAN>Keyboard Support: </SPAN> Allows users to type numbers and use basic keyboard shortcuts for operations.<BR>
+                                                <SPAN>Decimal Support: </SPAN> Perform calculations with decimal numbers for precision.<BR>
+                                                <SPAN>Backspace Function: </SPAN> Allow users to delete digits or clear the entire input.
+                                            </P>
+                                        </div>    
+                                    </DIV>
+                                    <DIV CLASS="FEATURES_RIGHT">
+                                        <H4><i class="fa-solid fa-feather-pointed"></i> UPCOMING FEATURES</H4>
+                                        <div class="scrollable-div">
+                                            <P><SPAN>Scientific Calculator Mode: </SPAN>  Introducing advanced mathematical functions like square root, exponentials, trigonometric functions.<BR>
+                                                <SPAN>Theme Customization: </SPAN> Options to personalize the calculator interface with different color themes.<BR>
+                                                <SPAN>History Log: </SPAN>  Record of previous calculations for reference or reuse.<BR>
+                                                <SPAN>Unit Conversion: </SPAN> Convert between different units (e.g., currency, measurements) for added utility.<BR>
+                                                <SPAN>Graphical Representation: </SPAN> Visualize calculations with graphs or charts for enhanced analysis.<BR>
+                                            </P>
+                                        </div> 
+                                    </DIV>
+                                </DIV>
+                            </DIV>
+                        </DIV>
+                    </div>
+                </div>
+            </DIV>
+        </DIV>
+        <!--- CONTACT ME SECTION --->
+        <DIV ID="contact">
+            <DIV CLASS="CONTAINER">
+                <DIV CLASS="ROW">
+                    <DIV CLASS="CONTACT_LEFT">
+                        <H1 CLASS="MIDDLE">REACH <SPAN CLASS="RED">OUT!</SPAN></H1>
+                        <P CLASS="MAIL"><ion-icon name="mail"></ion-icon>&#160;&#160;riteshjadhav.292005@gmail.com</P>
+                        <p><ion-icon name="call"></ion-icon>&#160;&#160;9082877468</p>
+                        <DIV CLASS="SOCIAL-MEDIA">
+                            <A HREF="https://www.linkedin.com/in/ritesh-jadhav292005/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></A>
+                            <A HREF="https://x.com/RITESHJ2912" target="_blank"><ion-icon name="logo-twitter"></ion-icon></A>
+                            <A HREF="https://www.instagram.com/ritesh.jadhavv/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></A>
+                            <A HREF="https://www.facebook.com/profile.php?id=100068175939233" target="_blank"><ion-icon name="logo-facebook"></ion-icon></A>
+                        </DIV>
+                    </DIV>
+                    <DIV CLASS="CONTACT_RIGHT">
+                        <FORM NAME="submit-to-google-sheet">
+                            <INPUT TYPE="TEXT" NAME="Name" PLACEHOLDER="Your Name" REQUIRED>
+                            <INPUT TYPE="EMAIL" NAME="EMAIL" PLACEHOLDER="your Email" REQUIRED>
+                            <INPUT TYPE="NUMBER" NAME="NUMBER" PLACEHOLDER="your Number" REQUIRED>
+                            <TEXTAREA NAME="MESSAGE" ROWS="6" PLACEHOLDER="Your Message"></TEXTAREA>
+                            <BUTTON TYPE="SUBMIT" CLASS="BTN BTN2">Submit</BUTTON>
+                        </FORM>
+                        <DIV id="msg"></DIV>
+                    </DIV>
+                </DIV>
+            </DIV>
+        </DIV>
+        <!--- COPYRIGHT SECTION --->
+        <DIV CLASS="COPYRIGHT">
+            <P><i class="fa-regular fa-copyright"></i> Ritesh Jadhav 2024. All Rights Reserved. All content, images, and code on this website are the intellectual property of Ritesh Jadhav. Unauthorized use and/or duplication of this material without express and written permission from this site's author and/or owner is strictly prohibited.<BR> For permission requests, please contact me at riteshjadhav.292005@gmail.com.</P>
+        </DIV>
+        <!--- SCROLLREVEAL SCRIPT --->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--- FONT ASWESOME SCRIPT --->   
+        <script src="https://kit.fontawesome.com/006ef9de26.js" crossorigin="anonymous"></script>
+        <!--- CONSTANT TYPED --->
+        <SCRIPT SRC="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></SCRIPT>
+        <!--- JAVASCRIPT --->
+        <SCRIPT SRC="SCRIPT.js"></SCRIPT>
+        <!--- IONICONS --->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </BODY>
+</HTML>

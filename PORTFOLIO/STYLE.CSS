@@ -1,0 +1,881 @@
+*{
+    MARGIN:0;
+    PADDING:0;
+    FONT-FAMILY: 'POPPINS', SANS-SERIF;
+    BOX-SIZING:BORDER-BOX;
+}
+HTML{
+    scroll-behavior: smooth;                /* BY THIS SHIFTING BETWEEN TWO TABS CAN BE DONE EASILY*/
+}
+BODY{
+    BACKGROUND-COLOR:BLACK;
+    COLOR:WHITE;
+}
+#header{                                     /* IF WE ARE LINKING CSS TO CLASS THEN . OPERATOR */
+    WIDTH:100%;                              /* IF WE ARE LINKING CSS TO ID THEN # OPERATOR */
+    HEIGHT:100VH;                            /* IF WE ARE LINKING CSS TO TAG THEN NO OPERATOR */
+    BACKGROUND-COLOR:BLACK;
+    BACKGROUND-SIZE:COVER;
+    BACKGROUND-POSITION:CENTER;
+}
+.CONTAINER{
+    PADDING:10PX 50PX;                  /* TOP&BOTTOM   LEFT&RIGHT*/
+    margin-top:30px;
+}
+NAV{
+    DISPLAY:FLEX;                               /* BY THIS BOTH LOGO AND LINKS WILL COME IN STRAIGHT LINE*/
+    ALIGN-ITEMS:CENTER;
+    JUSTIFY-CONTENT:SPACE-BETWEEN;
+    flex-wrap:wrap;
+}
+.LOGO{
+    WIDTH:140PX;
+}
+NAV UL LI{
+    DISPLAY:INLINE-BLOCK;                   /*BY THIS ALL LINKS WILL COME IN ONE SINGLE LINE*/
+    LIST-STYLE:NONE;                        /*THE DOT BEFORE THE LIST WILL GONE*/
+    MARGIN: 0PX 20PX;
+}
+NAV UL LI A{
+    COLOR:WHITE;
+    TEXT-DECORATION:NONE;                   /*THIS WILL HIDE THE UNDERLINE FROM LINKS*/
+    FONT-SIZE:18PX;
+    POSITION:RELATIVE;                      /*SINCE POSITION IN AFTER IS ABSOULTE,HERE IT IS RELATIVE*/
+}
+NAV UL LI A::after{                         /* THIS IS FOR RED LINE AFTER CLICKING ON ANY LINK*/
+    CONTENT: ' ';
+    WIDTH:0px;                              /*INITIALLY WIDTH IS ZERO, ELSE IT WILL BE VISIBLE BEFORE CLICKING ON ANY ELEMENT*/
+    HEIGHT:3PX;
+    BACKGROUND:RED;
+    POSITION:ABSOLUTE;                      /*IMPORTANT*/
+    LEFT:0;                                 /*STARTING POINT OF THAT LINE SHOULD BE SAME AS STARTING LETTER OF ANY LINK */
+    BOTTOM:-6PX;
+    TRANSITION: 0.5S;
+}
+NAV UL LI A:HOVER::after{
+    WIDTH:100%;
+}
+.HOME_IMAGE{
+    MARGIN-LEFT:850PX;
+}
+.HOME_CONTENT{
+    margin-top: -325PX;
+    MARGIN-LEFT: 70PX;
+}
+.HOME_CONTENT H3{
+    FONT-SIZE:25PX;
+    FONT-WEIGHT:700;
+}
+.HOME_CONTENT H3:nth-of-type(2){
+    MARGIN-BOTTOM:10PX;
+}
+.HOME_CONTENT SPAN{
+    COLOR:RED;
+    FONT-SIZE:35PX
+}
+.HOME_CONTENT H1{
+    FONT-SIZE:50PX;
+    FONT-WEIGHT:700;
+    LINE-HEIGHT:1.3;
+}
+.HOME_CONTENT P{
+    FONT-SIZE:20PX;
+}
+.SOCIAL-MEDIA A{
+    DISPLAY:INLINE-FLEX;
+    JUSTIFY-CONTENT:CENTER;
+    ALIGN-ITEMS:CENTER;
+    MARGIN-RIGHT:30PX;
+    HEIGHT:50PX;
+    FONT-SIZE:25PX;
+    BACKGROUND:TRANSPARENT;
+    COLOR:RED;
+}
+.SOCIAL-MEDIA A:HOVER{
+    BACKGROUND:RED;
+    COLOR:WHITE;
+    border-radius: 78%;
+    height: 0PX;
+}
+.BTN{
+    DISPLAY:INLINE-BLOCK;
+    MARGIN-TOP:10PX;
+    PADDING: 15PX 25PX;
+    background-color: RED;
+    BORDER-RADIUS:25PX;
+    BOX-SHADOW:0 0 25PX RED;
+    FONT-SIZE:15PX;
+    COLOR:BLACK;
+    TEXT-DECORATION:NONE;
+    FONT-WEIGHT:700;
+    TRANSITION:0.5S EASE;
+}
+.BTN:HOVER{
+    BOX-SHADOW:NONE;
+}
+/*START OF ABOUT ME SECTION*/
+#about{
+    PADDING:-80PX 0 0 0;
+    COLOR:WHITE;
+}
+.ROW, .FEATURES{
+    DISPLAY:FLEX;
+    JUSTIFY-CONTENT:SPACE-BETWEEN;
+    FLEX-WRAP:WRAP;
+}
+.ABOUT_COLUMN_1{
+    FLEX-BASIS:35%;                     /*IT WILL ADJUST THE SIZE OF PHOTO WITH APPROPRIATE SECTION*/
+}
+.ABOUT_COLUMN_1 IMG{
+    WIDTH:100%;
+    BORDER-RADIUS:25PX;
+}
+.ABOUT_COLUMN_2{
+    FLEX-BASIS:60%;
+}
+.RED{
+    COLOR:RED;
+    FONT-SIZE:35PX;
+    line-height: 70PX;
+}
+.TAB_TITLES{
+    DISPLAY:FLEX;
+    MARGIN:20PX 0 40PX;                    /*TOP   LEFT&RIGHT   BOTTOM*/
+}
+.TAB_LINKS{
+    MARGIN-RIGHT:50PX;
+    FONT-SIZE:18PX;
+    FONT-WEIGHT:500;
+    CURSOR:POINTER;
+    POSITION:RELATIVE;
+}
+.TAB_LINKS::after{                         /* THIS IS FOR RED LINE AFTER CLICKING ON ANY LINK*/
+    CONTENT: ' ';
+    WIDTH:0px;                              /*INITIALLY WIDTH IS ZERO, ELSE IT WILL BE VISIBLE BEFORE CLICKING ON ANY ELEMENT*/
+    HEIGHT:3PX;
+    BACKGROUND:RED;
+    POSITION:ABSOLUTE;                      /*IMPORTANT*/
+    LEFT:0;                                 /*STARTING POINT OF THAT LINE SHOULD BE SAME AS STARTING LETTER OF ANY LINK */
+    BOTTOM:-6PX;
+    TRANSITION: 0.5S;
+}
+.TAB_LINKS.ACTIVE_LINK::AFTER{
+    WIDTH:50%;
+}
+.TAB_CONTENTS UL LI{
+    LIST-STYLE:NONE;
+    MARGIN:10PX 0;
+}
+.TAB_CONTENTS UL LI SPAN{
+    COLOR:RED;
+    FONT-SIZE:17PX;
+    LINE-HEIGHT:25PX;
+}
+.TAB_CONTENTS{
+    DISPLAY:NONE;                               /*IT WILL HIDE ALL CONTENT STARTINGLY*/
+}
+.TAB_CONTENTS.ACTIVE_TAB{
+    DISPLAY:BLOCK;                              /*IT WILL DISPLAY THE CONTENT*/
+}
+/*STARTING OF MY SERVICES*/
+#services, #projects{
+    PADDING:50PX 0px 0px 0px;  /*TOP&BOTTOM   LEFT&RIGHT*/
+}
+.SERVICES_LIST{
+    DISPLAY:GRID;
+    grid-template-columns:repeat(AUTO-FIT,MINMAX(250PX, 1FR));
+    GRID-GAP:40PX;
+    MARGIN-TOP:50PX;
+}
+.SERVICES_LIST DIV{
+    background-color: #262626;
+    PADDING:40PX;
+    FONT-SIZE:13PX;
+    FONT-WEIGHT:300;
+    BORDER-RADIUS:15PX;
+    Transition: background 0.5s, transform 0.5s;
+    
+}
+.SERVICES_LIST DIV I{
+    FONT-SIZE:50PX;
+    MARGIN-BOTTOM:30PX;
+    MARGIN-LEFT:35%;
+}
+.SERVICES_LIST DIV H2{
+    FONT-SIZE:30PX;
+    FONT-WEIGHT:500;
+    MARGIN-BOTTOM:15PX;
+    MARGIN-LEFT:20%;
+}
+.SERVICES_LIST DIV P{
+    FONT-SIZE:17PX;
+}
+.SERVICES_LIST DIV A{
+    TEXT-DECORATION:NONE;
+    COLOR:#FFFF;
+    FONT-SIZE:12PX;
+    MARGIN-TOP:20PX;
+    DISPLAY:INLINE-BLOCK;
+}
+.SERVICES_LIST DIV:HOVER{
+    BACKGROUND:RED;
+    TRANSFORM:translateY(-10PX);
+    .BTN_SERVICES{
+        background-color: #262626;
+    }
+    
+}
+.BTN_SERVICES{
+    DISPLAY:INLINE-BLOCK;
+    margin-TOP:10PX;
+    PADDING: 15PX 25PX;
+    background-color: RED;
+    BORDER-RADIUS:25PX;
+    BOX-SHADOW:0 0 25PX RED;
+    FONT-SIZE:15PX;
+    COLOR:BLACK;
+    TEXT-DECORATION:NONE;
+    FONT-WEIGHT:700;
+    TRANSITION:0.5S EASE;
+}
+.BTN_SERVICES:HOVER{
+    BOX-SHADOW:NONE;
+    background-color: #262626;
+}
+.MIDDLE{
+    MARGIN-LEFT:40%;
+}
+/*STARTING OF LATEST PROJECTS*/
+.container{
+    display:grid;
+    max-width: 1300px;
+    margin:0 auto;
+    padding:3rem 2rem;
+    cursor: pointer;
+ }
+ .container .products-container{
+    DISPLAY:GRID;
+    grid-template-columns:repeat(AUTO-FIT,MINMAX(340PX, 1FR));
+    GRID-GAP:40PX;
+    MARGIN-TOP:0PX;
+ }
+ 
+ .container .products-container .product{
+    background-color: #262626;
+    PADDING:40PX;
+    FONT-SIZE:13PX;
+    FONT-WEIGHT:300;
+    BORDER-RADIUS:15PX;
+    Transition: background 0.5s, transform 0.5s;
+    height:450px;
+    cursor: pointer;
+ }
+ 
+ .container .products-container .product:hover{
+    BACKGROUND:RED;
+    TRANSFORM:translateY(-10PX);
+ }
+ 
+ .container .products-container .product img{
+    DISPLAY:FLEX;
+    MARGIN-LEFT:-10PX;
+    MARGIN-TOP:-20PX;
+    BORDER-RADIUS:10PX;
+    WIDTH:300PX;
+ }
+ 
+ .container .products-container .product:hover img{
+    transform: scale(1.3);
+    TRANSITION:0.5S EASE;
+ }
+ 
+ .container .products-container .product h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:RED;
+    TRANSFORM:translateY(-10PX);
+    LINE-HEIGHT:0PX;
+    MARGIN-LEFT:60PX;
+    MARGIN-TOP:30PX;
+ }
+
+ .container .products-container .product .center_2{
+    margin-left:80px;
+ }
+ 
+ .container .products-container .product:hover h3{
+    COLOR:BLACK;
+    transform: scale(1.3);
+    TRANSITION:0.5S EASE;
+ }
+ 
+ .container .products-container .product I{
+    FONT-SIZE:23PX;
+    MARGIN-LEFT:40PX;
+    line-height: 50PX;
+ }
+
+ .container .products-container .product .hello{
+    margin-left:70px;
+ }
+ 
+ .container .products-container .product P{
+    FONT-SIZE:17PX;
+ }
+ 
+ .products-preview{
+    position: fixed;
+    top:0; left:0;
+    min-height: 100vh;
+    width: 100%;
+    BACKGROUND:rgba(0,0,0,.5);          /* a= alpha, it inndicates opcity, 0.0=fully transperant,1.0=fully opacity*/
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+ }
+ 
+ .products-preview .preview{
+    display: none;
+    padding:2rem;
+    background: #262626;
+    position: relative;
+    margin:2rem;
+    width: 70rem;
+    z-index: 9;
+ }
+ 
+ .products-preview .preview.active{
+    display: inline-block;
+ }
+ 
+ .products-preview .preview img{
+    HEIGHT:165PX;
+    PADDING:5PX;
+    
+ }
+ 
+ .PREVIEW_LEFT{
+    FLEX-BASIS:40%;
+}
+ .PREVIEW_RIGHT{
+    FLEX-BASIS:60%;
+ }
+ .PREVIEW_RIGHT H3{
+    COLOR:RED;
+    FONT-SIZE:30PX;
+    RIGHT:1.5REM; TOP:1REM;
+ }
+ .products-preview .preview .fa-times{
+    position: absolute;
+    top:1rem; right:1.5rem;
+    cursor: pointer;
+    COLOR:RED;
+    FONT-SIZE:35PX;
+    TRANSITION:0.5S EASE;
+ }
+ 
+ .products-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+ }
+ 
+ .products-preview .preview .stars{
+    padding:0rem 0;
+    FONT-SIZE:13PX;
+    MARGIN-LEFT:13PX;
+ }
+ 
+ .products-preview .preview .stars i{
+    COLOR:YELLOW;
+    MARGIN-RIGHT:15PX;
+ }
+ .PROJECT_OVERVIEW H4, .PROJECT_LINKS H4, .FEATURES_LEFT H4, .FEATURES_RIGHT H4{
+    COLOR:RED;
+    FONT-SIZE:15PX;
+    font-style:italic;
+    MARGIN-TOP:10PX;
+    MARGIN-BOTTOM:5PX;
+ }
+ .PROJECT_LINKS P{
+    FONT-SIZE:13PX;
+    MARGIN:13PX;
+ }
+ .PROJECT_OVERVIEW P{
+    MARGIN:13PX;
+ }
+ .FEATURES_LEFT{
+    FLEX-BASIS:50%;
+ }
+ .FEATURES_RIGHT{
+    flex-basis: 50%;
+ }
+ .scrollable-div {
+    width: 300px;
+    height: 200px;
+    border: 0px solid;
+    padding: 5px;
+    overflow-y: scroll; /* Adds vertical scrollbar */
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+ }
+ .scrollable-div SPAN{
+    COLOR:RED;
+    font-style:italic;
+ } 
+
+/*CONTACT ME SECTION */
+.CONTACT_LEFT P{
+    FONT-SIZE:19PX;
+    PADDING-TOP:15PX;
+}
+.CONTACT_LEFT{
+    FLEX-BASIS:35%;
+
+}
+.CONTACT_RIGHT{
+    FLEX-BASIS:60%;
+}
+.BTN2{
+    border-color: RED;
+    COLOR:WHITE;
+    padding:14px 60px;
+    font-size:18px;
+    margin-top:20px;
+    cursor:pointer;
+    margin-bottom:30px;
+}
+.CONTACT_RIGHT FORM{
+    WIDTH:100%;
+}
+FORM INPUT, FORM TEXTAREA{
+    WIDTH:100%;
+    BORDER:0;
+    OUTLINE:NONE;
+    BACKGROUND: #262626;
+    PADDING:15PX;
+    MARGIN:15PX 0;
+    COLOR:WHITE;
+    FONT-SIZE:18PX;
+    BORDER-RADIUS:10PX;
+}
+.COPYRIGHT{
+    height:120px;
+    background:#262626;
+    font-size:17px;
+    line-height:35px;
+}
+#msg{
+    color:green;
+    display:block;
+}
+/*---------------------------------------------CSS FOR SMALL SCREEN-------------------------------------------------------------------*/
+NAV .fa-solid{
+    display:none;
+}
+
+
+
+
+
+ /*----------------------------------------------------------------------------------------------------------------*/
+ /* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    NAV .fa-solid{
+        display:block;
+        font-size:25px;
+    }
+    .fa-bars{
+        margin-left:680px;
+        margin-top:-50px;
+    }
+    NAV UL{
+        background-color: RED;
+        POSITION:FIXED;
+        TOP:0;
+        RIGHT:-200px;
+        WIDTH:200PX;
+        HEIGHT:100VH;
+        PADDING-TOP:50PX;
+        z-index:2;
+        transition :right 0.5s;
+    }
+    NAV UL LI{
+        DISPLAY:BLOCK;
+        padding:25px;
+    }
+    NAV UL .fa-solid{
+        position:absolute;
+        top:25px;
+        left:30px;
+        cursor:pointer;
+    }
+
+    .HOME_IMAGE {
+        margin-left: 200px;
+        margin-top: 20px;
+    }
+    .HOME_CONTENT {
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+    .BTN {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .ABOUT_COLUMN_1 IMG{
+        MARGIN-TOP:0PX;
+        WIDTH:50%;
+        MARGIN-LEFT:180PX;
+    }
+    .ABOUT_COLUMN_2 H1{
+        FONT-SIZE:35PX;
+        MARGIN-LEFT:280PX;
+    }
+    .ABOUT_COLUMN_2 P{
+        FONT-SIZE:20PX;
+    }
+    .TAB_TITLES {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .TAB_LINKS {
+        margin-right: 18px;
+        font-size: 30px;
+        MARGIN-BOTTOM:15PX;
+    }
+    .TAB_CONTENTS UL LI SPAN{
+        FONT-SIZE:20PX;
+    }
+    .TAB_CONTENTS UL LI{
+        FONT-SIZE:18PX;
+    }
+    .ABOUT_COLUMN_2 H1 SPAN{
+        FONT-SIZE:25PX;
+    }
+    .ABOUT_COLUMN_2 .RED{
+        font-size:40px;
+    }
+
+    .SERVICES_LIST {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .MIDDLE{
+        FONT-SIZE:35PX;
+        MARGIN-LEFT:250PX;
+    }
+    
+    #projects .container{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        MARGIN-TOP:80PX;
+        padding-left:20PX;
+        MARGIN-LEFT:-241PX;
+        DISPLAY:FLEX;
+    }
+    /* Adjust product preview container styles */
+    .products-preview{
+        overflow-y: auto;
+        max-height:100%;
+        position:fixed;
+        top:0; 
+        z-index:1000;
+    }
+    .preview {
+        max-height: 90vh; /* Prevents the preview from exceeding the viewport height */
+        overflow-y: auto;
+        background: #fff; /* Background color for the preview content */
+        padding: 20px; /* Padding for better spacing */
+        border-radius: 10px; /* Rounded corners for better aesthetics */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    }
+    body.no-scroll {
+        overflow: hidden;
+    }
+    .products-preview .preview {
+        width: 90%;  /* Make the preview container take most of the screen width */
+        padding: 1rem;  /* Reduce padding */
+        margin: 1rem;  /* Reduce margin */
+        MARGIN-LEFT:-10PX;
+        height:90%;
+        padding-top:15px;
+    }
+    .products-preview .preview img {
+        width: 100%;  /* Make images responsive */
+        height: auto;  /* Maintain aspect ratio */
+    }
+
+    .products-preview .preview .PREVIEW_LEFT, .products-preview .preview .PREVIEW_RIGHT {
+        flex-basis: 100%;  /* Make both columns full width */
+        padding: 0.5rem;  /* Add some padding */
+    }
+
+    .products-preview .preview .PREVIEW_RIGHT H3 {
+        font-size: 20px;  /* Adjust font size */
+        text-align: center;  /* Center align text */
+        margin-bottom:10px;
+    }
+
+    .products-preview .preview .stars {
+        text-align: center;  /* Center align stars */
+        font-size:18px;
+    }
+
+    .products-preview .preview .fa-times {
+        font-size: 40px;  /* Adjust close button size */
+        top: 0.5rem;  /* Adjust position */
+        right: 0.5rem;  /* Adjust position */
+    }
+
+    .PRODUCT_OVERVIEW, .PROJECT_LINKS P {
+        font-size: 18px;  /* Adjust font size */
+    }
+    .PROJECT_OVERVIEW P{
+        font-size:18px;
+    }
+    .FEATURES_LEFT, .FEATURES_RIGHT{
+        FLEX-BASIS:100% auto;
+    }
+    .FEATURES_RIGHT{
+        MARGIN-TOP:0PX;
+    }
+    .scrollable-div P{
+        MARGIN-LEFT:10PX;
+        font-size:18px;
+    }
+    
+    .COPYRIGHT P{
+        FONT-SIZE:18PX;
+        LINE-HEIGHT:20PX;
+        PADDING-TOP:15PX;
+    }
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    NAV .fa-solid{
+        display:block;
+        font-size:25px;
+    }
+    .fa-bars{
+        margin-left:310px;
+        margin-top:-50px;
+    }
+    NAV UL{
+        background-color: RED;
+        POSITION:FIXED;
+        TOP:0;
+        RIGHT:-200px;
+        WIDTH:200PX;
+        HEIGHT:100VH;
+        PADDING-TOP:50PX;
+        z-index:2;
+        transition :right 0.5s;
+    }
+    NAV UL LI{
+        DISPLAY:BLOCK;
+        padding:25px;
+    }
+    NAV UL .fa-solid{
+        position:absolute;
+        top:25px;
+        left:30px;
+        cursor:pointer;
+    }
+
+
+    .HOME_IMAGE {
+        margin-left: 60px;
+        margin-top: 20px;
+        margin-bottom:30px;
+        height:300px;
+    }
+    .HOME_CONTENT {
+        margin-left: 5px;
+        margin-top: -20px;
+    }
+    .HOME_CONTENT SPAN{
+        FONT-SIZE:18PX;
+    }
+    
+    .HOME_CONTENT H3{
+        FONT-SIZE:15PX;
+    }
+    .HOME_CONTENT H1{
+        FONT-SIZE:35PX;
+    }
+    .HOME_CONTENT P{
+        FONT-SIZE:15PX;
+    }
+
+    .ABOUT_COLUMN_2 H1{
+        FONT-SIZE:20PX;
+        MARGIN-LEFT:100PX;
+    }
+    .ABOUT_COLUMN_2 .RED{
+        FONT-SIZE:25PX;
+    }
+    .ABOUT_COLUMN_2 P{
+        FONT-SIZE:12PX;
+    }
+    .TAB_TITLES {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .TAB_LINKS {
+        margin-right: 18px;
+        font-size: 16px;
+        MARGIN-BOTTOM:15PX;
+    }
+    .TAB_CONTENTS UL LI SPAN{
+        FONT-SIZE:18PX;
+    }
+    .TAB_CONTENTS UL LI{
+        FONT-SIZE:13PX;
+    }
+    .ABOUT_COLUMN_2 H1 SPAN{
+        FONT-SIZE:20PX;
+    }
+    .BTN {
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+    .SOCIAL-MEDIA A {
+        font-size: 20px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .ABOUT_COLUMN_1 IMG{
+        MARGIN-TOP:0PX;
+        WIDTH:75%;
+        MARGIN-LEFT:40PX;
+    }
+
+    #services .MIDDLE{
+        MARGIN-LEFT:90PX;
+    }
+    .SERVICES_LIST {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        MARGIN-TOP:10PX;
+    }
+    .MIDDLE{
+        MARGIN-LEFT:60PX;
+        FONT-SIZE:25PX;
+    }
+    .RED{
+        FONT-SIZE:27PX;
+    }
+    .CONTACT_LEFT P{
+        FONT-SIZE:15PX;
+    }
+
+    #projects .MIDDLE{
+        MARGIN-LEFT:60PX;
+    }
+    #projects .container{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        MARGIN-TOP:10PX;
+        MARGIN-LEFT:-8PX;
+    }
+    /* Adjust product preview container styles */
+    .products-preview{
+        overflow-y: auto;
+        max-height:100%;
+        position:fixed;
+        top:0; 
+        z-index:1000;
+    }
+    .preview {
+        max-height: 90vh; /* Prevents the preview from exceeding the viewport height */
+        overflow-y: auto;
+        background: #fff; /* Background color for the preview content */
+        padding: 20px; /* Padding for better spacing */
+        border-radius: 10px; /* Rounded corners for better aesthetics */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    }
+    body.no-scroll {
+        overflow: hidden;
+    }
+    .products-preview .preview {
+        width: 90%;  /* Make the preview container take most of the screen width */
+        padding: 1rem;  /* Reduce padding */
+        margin: 1rem;  /* Reduce margin */
+        MARGIN-LEFT:-10PX;
+        height:90%;
+        padding-top:15px;
+    }
+    .products-preview .preview img {
+        width: 100%;  /* Make images responsive */
+        height: auto;  /* Maintain aspect ratio */
+    }
+
+    .products-preview .preview .PREVIEW_LEFT, .products-preview .preview .PREVIEW_RIGHT {
+        flex-basis: 100%;  /* Make both columns full width */
+        padding: 0.5rem;  /* Add some padding */
+    }
+
+    .products-preview .preview .PREVIEW_RIGHT H3 {
+        font-size: 20px;  /* Adjust font size */
+        text-align: center;  /* Center align text */
+        margin-bottom:10px;
+    }
+
+    .products-preview .preview .stars {
+        text-align: center;  /* Center align stars */
+        font-size:12px;
+    }
+
+    .products-preview .preview .fa-times {
+        font-size: 20px;  /* Adjust close button size */
+        top: 0.5rem;  /* Adjust position */
+        right: 0.5rem;  /* Adjust position */
+    }
+
+    .PRODUCT_OVERVIEW, .PROJECT_LINKS P {
+        font-size: 12px;  /* Adjust font size */
+    }
+    .PROJECT_OVERVIEW P{
+        font-size:12px;
+    }
+    .FEATURES_LEFT, .FEATURES_RIGHT{
+        FLEX-BASIS:100% auto;
+    }
+    .FEATURES_RIGHT{
+        MARGIN-TOP:-40PX;
+    }
+    .CONTACT_LEFT, .CONTACT_RIGHT {
+        flex-basis: 100%;
+        WIDTH:100%;
+    }
+    .scrollable-div P{
+        MARGIN-LEFT:10PX;
+        font-size:12px;
+    }
+    
+
+    NAV UL LI {
+        margin: 0 10px;
+    }
+    .COPYRIGHT P{
+        FONT-SIZE:12PX;
+        LINE-HEIGHT:12PX;
+        PADDING-TOP:15PX;
+    }
+
+    .container, .HOME_CONTENT, .CONTACT_LEFT, .CONTACT_RIGHT, .ROW {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px; /* Adjust padding as needed */
+        box-sizing: border-box; /* Include padding in width calculation */
+        
+    }
+
+    .center I{
+        margin-left:-280px;
+    }
+}
