@@ -1,0 +1,597 @@
+<HTML>
+    <HEAD>
+       <LINK REL="SHORTCUT ICON" TYPE="X-ICON" HREF="LOGO.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--- CSS SCRIPT --->
+       <LINK REL="STYLESHEET" HREF="STYLE.CSS">  
+        <!--- CSS SCRIPT FOR TESTIMONIAL SLIDER --->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+       <TITLE>RITZII-POPULAR_PROPERTIES</TITLE>
+   </HEAD>
+    <BODY>
+        <DIV CLASS="HEADER">
+            <DIV CLASS="CONTAINER">
+                <HEADER>
+                    <DIV CLASS="LOGO">
+                        <P><i class="fa-solid fa-house"></i> Heaven</P>
+                    </DIV>
+                    <NAV>
+                        <UL>
+                            <LI><A HREF="HOME.HTML">HOME</A></LI>
+                            <LI><A HREF="HOME.HTML#DISCOVER_POPULAR_PROPERTIES">PROPERTY LISTINGS</A></LI>
+                            <LI><A HREF="HOME.HTML#LETS_GET_STARTED">CONTACT US</A></LI>
+                            <LI><A HREF="HOME.HTML#OUR_TESTIMONIALS">TESTIMONIALS</A></LI>
+                            <LI><A HREF="ACCOUNT.HTML"><i class="fa-solid fa-circle-user PROFILE"></i></A></LI>
+                            <LI><A><i class="fa-solid fa-bullseye PROFILE"></i></A></LI>
+                        </UL>
+                    </NAV>
+                </HEADER>    
+                <!--- END OF NAVBAR --->
+            </DIV>
+        </DIV>
+        <!------------------------DISCOVER POPULAR PROPERTIES----------------------->
+        <DIV id="DISCOVER_POPULAR_PROPERTIES ">
+            <DIV CLASS="CONTAINER_5 POPULAR_PROPERTIES">
+                <DIV CLASS="ROW">
+                    <DIV CLASS="PROPERTY_CONTAINER">
+                        <DIV CLASS="PROPERTY" data-property-id="property1">
+                            <IMG SRC="MOST_VIEWED_1.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>                           <!------ this IS A CLASS SELECTOR OPERATOR TO ENSURES THAT ONLY THAT HEART WILL BE RED AND NOT OTHERS-->
+                            <P>Ocean Breeze Villa</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Juhu, Mumbai</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹12,50,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>VILLA</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property2">
+                            <IMG SRC="MOST_VIEWED_2.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Sunset Ridge</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Lonavala, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹ 6,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>VILLA</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property3">
+                            <IMG SRC="MOST_VIEWED_3.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Golden Oaks Estate</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Mulshi, Pune</span><BR>
+                        <span><ion-icon name="wallet"></ion-icon> ₹4,75,00,000</span>
+                        <DIV CLASS="LABLES">
+                            <P>FOR SELL</P>
+                            <P>VILLA</P>
+                        </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property4">
+                            <IMG SRC="MOST_VIEWED_4.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Crystal Cove Estate</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Versova, Mumbai</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹10,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>VILLA</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property5">
+                            <IMG SRC="MOST_VIEWED_5.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Emerald Bay Villa</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Koregaon Park, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹7,20,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>VILLA</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property6">
+                            <IMG SRC="MOST_VIEWED_6.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Lakeside Cottage</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Baner, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹5,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>VILLA</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property7">
+                            <IMG SRC="MOST_VIEWED_7.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Skyline Residences</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Powai, Mumbai</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon>  ₹1,20,000/month</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR RENT</P>
+                                <P>APARTMENT</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property8">
+                            <IMG SRC="MOST_VIEWED_8.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Cityscape Residences</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Viman Nagar, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹90,000/month</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR RENT</P>
+                                <P>APARTMENT</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property9">
+                            <IMG SRC="MOST_VIEWED_9.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Sunshine Towers</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Kharghar, Mumbai</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹60,000/month</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR RENT</P>
+                                <P>APARTMENT</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property10">
+                            <IMG SRC="MOST_VIEWED_10.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Silver Sands Residences</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Thane</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹75,000/month</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR RENT</P>
+                                <P>APARTMENT</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property11">
+                            <IMG SRC="MOST_VIEWED_11.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Urban Workspaces</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Kurla-BKC, Mumbai</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹55,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>OFFICE</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property12">
+                            <IMG SRC="MOST_VIEWED_12.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Sunrise Business Hub</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Wakad, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹14,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>OFFICE</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property13">
+                            <IMG SRC="MOST_VIEWED_12.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Sunrise Business Hub</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Wakad, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹14,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>OFFICE</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property14">
+                            <IMG SRC="MOST_VIEWED_12.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Sunrise Business Hub</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Wakad, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹14,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>OFFICE</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property15">
+                            <IMG SRC="MOST_VIEWED_12.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Sunrise Business Hub</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Wakad, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹14,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>OFFICE</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property16">
+                            <IMG SRC="MOST_VIEWED_12.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Sunrise Business Hub</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Wakad, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹14,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>OFFICE</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property17">
+                            <IMG SRC="MOST_VIEWED_12.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Sunrise Business Hub</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Wakad, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹14,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>OFFICE</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property18">
+                            <IMG SRC="MOST_VIEWED_12.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Sunrise Business Hub</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Wakad, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹14,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>OFFICE</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property19">
+                            <IMG SRC="MOST_VIEWED_12.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Sunrise Business Hub</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Wakad, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹14,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>OFFICE</P>
+                            </DIV>
+                        </DIV>
+                        <DIV CLASS="PROPERTY" data-property-id="property20">
+                            <IMG SRC="MOST_VIEWED_12.jpg"><i class="fa-solid fa-heart" onclick="toggleHeart(this)"></i>
+                            <P>Sunrise Business Hub</P>
+                            <span><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Wakad, Pune</span><BR>
+                            <span><ion-icon name="wallet"></ion-icon> ₹14,00,00,000</span>
+                            <DIV CLASS="LABLES">
+                                <P>FOR SELL</P>
+                                <P>OFFICE</P>
+                            </DIV>
+                        </DIV>
+                    </DIV>
+                </DIV>
+            </DIV>
+            <div class="products-preview">
+                <div class="preview" data-target="property1">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                    <DIV CLASS="ROW">
+                        <DIV CLASS="PREVIEW_LEFT">
+                            <IMG SRC="MOST_VIEWED_1.jpg" HEIGHT="100%" id="ProductImg">
+                            <DIV CLASS="small-img-row">
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_1.jpg" width="100%" class="small-img">
+                                </DIV>
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_1_1.jpg" width="100%" class="small-img" >
+                                </DIV>
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_1_2.jpg" width="100%" class="small-img">
+                                </DIV>
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_1_3.jpg" width="100%" class="small-img">
+                                </DIV>
+                            </DIV>
+                            <A HREF="HOME.HTML#LETS_GET_STARTED"><DIV CLASS="BTN BTN_3">Book Your Slot Now &rarr;</DIV></A>
+                        </DIV>
+                        <DIV CLASS="PREVIEW_RIGHT">
+                            <P>Ocean Breeze Villa</P>
+                            <DIV CLASS="HIII">
+                            <span class="location"><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Juhu, Mumbai</span>
+                            <span><ion-icon name="wallet" CLASS="WALLET_EMOJI"></ion-icon> ₹12,50,00,000</span><br>
+                            <span><ion-icon name="train" CLASS="WALLET_EMOJI"></ion-icon> 08 Min from Juhu Station</span>
+                            <span><ion-icon name="walk" class="WALLET_EMOJI"></ion-icon>20 Min by walk</span><BR>
+                            <span class="location area"><ion-icon name="expand" class="WALLET_EMOJI"></ion-icon> 4,500 sq. ft.</span>
+                            <span><ion-icon name="construct" class="WALLET_EMOJI"></ion-icon> Fully furnished</span>
+                            </DIV>
+                            <DIV  CLASS="RATING">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </DIV> 
+                            <DIV CLASS="PROPERTY_DESCRIPTION">
+                                <span>Description</span>
+                                <P>Nestled along the stunning coastline, Ocean Breeze Villa offers an unparalleled living experience with its breathtaking ocean views and luxurious amenities. This 4,500 sq. ft. villa features spacious living areas, five elegantly designed bedrooms, and six modern bathrooms. The open-concept kitchen boasts high-end appliances and granite countertops, perfect for culinary enthusiasts. The expansive outdoor terrace, complete with a private infinity pool and alfresco dining area, is ideal for entertaining guests or enjoying serene sunsets. With direct beach access, Ocean Breeze Villa provides the ultimate seaside retreat for those seeking tranquility and elegance.</P>
+                            </DIV>
+                            <DIV CLASS="COMMENTS_SECTION">
+                                <span>Comments</span>
+                                <DIV CLASS="COMMENTS">
+                                    <DIV CLASS="TESTIMONIALS-ITEMS COMMENTS_ITEMS">
+                                        <DIV CLASS="INFO COMMENTS_INFO">
+                                            <IMG SRC="TESTIMONIALS_DP_1.jpg">
+                                            <DIV CLASS="TEXT-BOX">
+                                                <H3 CLASS="NAME COMMENTS_NAME">John D.</H3>
+                                                <p>Owner</p>                                 
+                                            </DIV> 
+                                            <DIV CLASS="HEYY">"Owning Ocean Breeze Villa has been an absolute dream. The breathtaking ocean views and luxurious amenities make it a perfect seaside retreat. We’ve enjoyed countless sunsets on the terrace and the private infinity pool has been a highlight for our family gatherings."</DIV>
+                                        </DIV>
+                                    </DIV>
+                                    <DIV CLASS="TESTIMONIALS-ITEMS COMMENTS_ITEMS">
+                                        <DIV CLASS="INFO COMMENTS_INFO">
+                                            <IMG SRC="TESTIMONIALS_DP_2.jpg">
+                                            <DIV CLASS="TEXT-BOX">
+                                                <H3 CLASS="NAME COMMENTS_NAME">Rajesh K.</H3>
+                                                <p>Renter</p>                                 
+                                            </DIV> 
+                                            <DIV CLASS="HEYY">"Staying at Ocean Breeze Villa was an unforgettable experience. The villa is beautifully designed and the views are simply stunning. The direct beach access was a huge plus, and we loved every moment spent by the infinity pool and outdoor dining area."</DIV>
+                                        </DIV>
+                                    </DIV>
+                                </DIV>
+                            </DIV>
+                        </DIV>
+                    </DIV>
+                </div>
+                <div class="preview" data-target="property2">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                    <DIV CLASS="ROW">
+                        <DIV CLASS="PREVIEW_LEFT">
+                            <IMG SRC="MOST_VIEWED_2.jpg" HEIGHT="100%" id="ProductImg">
+                            <DIV CLASS="small-img-row">
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_2.jpg" width="100%" class="small-img">
+                                </DIV>
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_1_1.jpg" width="100%" class="small-img" >
+                                </DIV>
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_1_2.jpg" width="100%" class="small-img">
+                                </DIV>
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_1_3.jpg" width="100%" class="small-img">
+                                </DIV>
+                            </DIV>
+                            <A HREF="HOME.HTML#LETS_GET_STARTED"><DIV CLASS="BTN BTN_3">Book Your Slot Now &rarr;</DIV></A>
+                        </DIV>
+                        <DIV CLASS="PREVIEW_RIGHT">
+                            <P>Sunset Ridge</P>
+                            <DIV CLASS="HIII">
+                            <span class="location"><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Lonavala, Pune</span>
+                            <span><ion-icon name="wallet" CLASS="WALLET_EMOJI"></ion-icon> ₹ 6,00,00,000</span><br>
+                            <span><ion-icon name="train" CLASS="WALLET_EMOJI"></ion-icon> 45 Min from karla Station</span>
+                            <span><ion-icon name="walk" class="WALLET_EMOJI"></ion-icon>20 Min by walk</span><BR>
+                            <span class="location area"><ion-icon name="expand" class="WALLET_EMOJI"></ion-icon>  3,800 sq. ft.</span>
+                            <span><ion-icon name="construct" class="WALLET_EMOJI"></ion-icon> Semi furnished</span>
+                            </DIV>
+                            <DIV  CLASS="RATING">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </DIV> 
+                            <DIV CLASS="PROPERTY_DESCRIPTION">
+                                <span>Description</span>
+                                <P>Discover the epitome of luxury and comfort at Sunset Ridge, a beautifully designed 3,800 sq. ft. villa that offers spectacular sunset views. This elegant property includes four spacious bedrooms, four bathrooms, and an open-plan living and dining area that exudes sophistication. The modern kitchen is equipped with top-of-the-line appliances and sleek cabinetry. The outdoor area features a stunning infinity pool, a sun deck, and a covered patio with a built-in BBQ, perfect for entertaining. With its prime location and exquisite design, Sunset Ridge is an idyllic retreat for those seeking a peaceful and luxurious lifestyle.</P>
+                            </DIV>
+                            <DIV CLASS="COMMENTS_SECTION">
+                                <span>Comments</span>
+                                <DIV CLASS="COMMENTS">
+                                    <DIV CLASS="TESTIMONIALS-ITEMS COMMENTS_ITEMS">
+                                        <DIV CLASS="INFO COMMENTS_INFO">
+                                            <IMG SRC="TESTIMONIALS_DP_3.jpg">
+                                            <DIV CLASS="TEXT-BOX">
+                                                <H3 CLASS="NAME COMMENTS_NAME">Neha s.</H3>
+                                                <p>Owner</p>                                 
+                                            </DIV> 
+                                            <DIV CLASS="HEYY">Sunset Ridge has been a wonderful home for us. The elegant design and spectacular sunset views make it a truly special place. We’ve hosted many gatherings here, and everyone always compliments the beautiful infinity pool and outdoor entertaining area.</DIV>
+                                        </DIV>
+                                    </DIV>
+                                    <DIV CLASS="TESTIMONIALS-ITEMS COMMENTS_ITEMS">
+                                        <DIV CLASS="INFO COMMENTS_INFO">
+                                            <IMG SRC="TESTIMONIALS_DP_4.jpg">
+                                            <DIV CLASS="TEXT-BOX">
+                                                <H3 CLASS="NAME COMMENTS_NAME">Samantha L.</H3>
+                                                <p>Renter</p>                                 
+                                            </DIV> 
+                                            <DIV CLASS="HEYY">"Sunset Ridge exceeded our expectations. The villa is luxurious and the sunset views are incredible. We loved the modern kitchen and spacious living areas. The outdoor space, with its infinity pool and sun deck, was perfect for our family vacation."</DIV>
+                                        </DIV>
+                                    </DIV>
+                                </DIV>
+                            </DIV>
+                        </DIV>
+                    </DIV>
+                </div>
+                <div class="preview" data-target="property3">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                    <DIV CLASS="ROW">
+                        <DIV CLASS="PREVIEW_LEFT">
+                            <IMG SRC="MOST_VIEWED_3.jpg" HEIGHT="100%" id="ProductImg">
+                            <DIV CLASS="small-img-row">
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_3.jpg" width="100%" class="small-img">
+                                </DIV>
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_1_1.jpg" width="100%" class="small-img" >
+                                </DIV>
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_1_2.jpg" width="100%" class="small-img">
+                                </DIV>
+                                <DIV class="small-img-col">
+                                    <IMG SRC="MOST_VIEWED_1_3.jpg" width="100%" class="small-img">
+                                </DIV>
+                            </DIV>
+                            <A HREF="HOME.HTML#LETS_GET_STARTED"><DIV CLASS="BTN BTN_3">Book Your Slot Now &rarr;</DIV></A>
+                        </DIV>
+                        <DIV CLASS="PREVIEW_RIGHT">
+                            <P>Golden Oaks Estate</P>
+                            <DIV CLASS="HIII">
+                            <span class="location"><ion-icon name="location" class="LOCATION_EMOJI"></ion-icon> Mulshi , Pune</span>
+                            <span><ion-icon name="wallet" CLASS="WALLET_EMOJI"></ion-icon> ₹4,75,00,000</span><br>
+                            <span><ion-icon name="train" CLASS="WALLET_EMOJI"></ion-icon> 45 Min from kala Station</span>
+                            <span><ion-icon name="walk" class="WALLET_EMOJI"></ion-icon>20 Min by walk</span><BR>
+                            <span class="location area"><ion-icon name="expand" class="WALLET_EMOJI"></ion-icon>  5,500 sq. ft.</span>
+                            <span><ion-icon name="construct" class="WALLET_EMOJI"></ion-icon> Fully furnished</span>
+                            </DIV>
+                            <DIV  CLASS="RATING">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </DIV> 
+                            <DIV CLASS="PROPERTY_DESCRIPTION">
+                                <span>Description</span>
+                                <P>Golden Oaks Estate is a luxurious 5,500 sq. ft. villa set in a prestigious neighborhood, offering unparalleled elegance and comfort. This exquisite property features six spacious bedrooms, including a master suite with a spa-like bathroom and walk-in closet, and six modern bathrooms. The grand foyer leads to a formal living room, a dining room, and a state-of-the-art kitchen with custom cabinetry and high-end appliances. The outdoor area is perfect for entertaining, with a swimming pool, a hot tub, and a beautifully landscaped garden. Golden Oaks Estate is ideal for those seeking a sophisticated lifestyle in a serene setting.</P>
+                            </DIV>
+                            <DIV CLASS="COMMENTS_SECTION">
+                                <span>Comments</span>
+                                <DIV CLASS="COMMENTS">
+                                    <DIV CLASS="TESTIMONIALS-ITEMS COMMENTS_ITEMS">
+                                        <DIV CLASS="INFO COMMENTS_INFO">
+                                            <IMG SRC="TESTIMONIALS_DP_5.jpg">
+                                            <DIV CLASS="TEXT-BOX">
+                                                <H3 CLASS="NAME COMMENTS_NAME">Priya R.</H3>
+                                                <p>Owner</p>                                 
+                                            </DIV> 
+                                            <DIV CLASS="HEYY">"Golden Oaks Estate has been a symbol of luxury and comfort for our family. The elegant design and spacious rooms make it a perfect home. We’ve enjoyed the beautiful garden and the high-end amenities throughout the property."</DIV>
+                                        </DIV>
+                                    </DIV>
+                                    <DIV CLASS="TESTIMONIALS-ITEMS COMMENTS_ITEMS">
+                                        <DIV CLASS="INFO COMMENTS_INFO">
+                                            <IMG SRC="TESTIMONIALS_DP_.6jpg.jpg">
+                                            <DIV CLASS="TEXT-BOX">
+                                                <H3 CLASS="NAME COMMENTS_NAME">Anita M.</H3>
+                                                <p>Renter</p>                                 
+                                            </DIV> 
+                                            <DIV CLASS="HEYY">"Golden Oaks Estate was a luxurious getaway. The villa is beautifully designed and very spacious. The garden and pool area were perfect for relaxation. We appreciated the attention to detail and the high-end amenities."</DIV>
+                                        </DIV>
+                                    </DIV>
+                                </DIV>
+                            </DIV>
+                        </DIV>
+                    </DIV>
+                </div>
+                <div class="preview" data-target="property4">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                    <DIV CLASS="ROW">
+                        <DIV CLASS="PREVIEW_LEFT">
+
+                        </DIV>
+                        <DIV CLASS="PREVIEW_RIGHT">
+                            
+                        </DIV>
+                    </DIV>
+                </div>
+                <div class="preview" data-target="property5">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                    <DIV CLASS="ROW">
+                        <DIV CLASS="PREVIEW_LEFT">
+
+                        </DIV>
+                        <DIV CLASS="PREVIEW_RIGHT">
+                            
+                        </DIV>
+                    </DIV>
+                </div>
+                <div class="preview" data-target="property6">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                    <DIV CLASS="ROW">
+                        <DIV CLASS="PREVIEW_LEFT">
+
+                        </DIV>
+                        <DIV CLASS="PREVIEW_RIGHT">
+                            
+                        </DIV>
+                    </DIV>
+                </div>
+                <div class="preview" data-target="property7">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                    <DIV CLASS="ROW">
+                        <DIV CLASS="PREVIEW_LEFT">
+
+                        </DIV>
+                        <DIV CLASS="PREVIEW_RIGHT">
+                            
+                        </DIV>
+                    </DIV>
+                </div>
+                <div class="preview" data-target="property8">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property9">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property10">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property11">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property12">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property13">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property14">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property15">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property16">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property17">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property18">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property19">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+                <div class="preview" data-target="property20">
+                    <i class="fas fa-times"></i>                                        <!------ CLOSE BUTTON-->
+                </div>
+            </div>
+            <DIV CLASS="PAGE_BTN">
+                <SPAN>1</SPAN>
+                <SPAN>2</SPAN>
+                <SPAN>3</SPAN>
+                <SPAN>4</SPAN>
+                <SPAN>5</SPAN>
+                <SPAN>&#8594;</SPAN>
+            </DIV>
+        </DIV>
+        <!------------------------FOOTER ----------------------->
+        <DIV CLASS="FOOTER FOOTER_ACCOUNT">
+            <DIV CLASS="CONTAINER">
+                <DIV CLASS="ROW">
+                    <DIV  CLASS="FOOTER_COL_1">
+                        <H3>Download Our App</H3>
+                        <P>Download App for Android and ios mobile phone</P>
+                        <DIV CLASS="PLAY_STORE_LOGO">
+                            <IMG SRC="FOOTER_STORE_LOGO_1.jpg">
+                            <IMG SRC="FOOTER_STORE_LOGO_2.jpg">
+                        </DIV>
+                    </DIV>
+                    <DIV  CLASS="FOOTER_COL_2">
+                        <P><i class="fa-solid fa-house"></i> Heaven</P>
+                        <P>Connecting You to Your Dream Property</P>
+                    </DIV>
+                    <DIV  CLASS="FOOTER_COL_3">
+                        <H3>Useful Links</H3>
+                        <UL>
+                            <LI><A HREF="#">Home</A></LI>
+                            <LI><A HREF="#EASIEST METHOD">About us</A></LI>
+                            <LI><A HREF="#DISCOVER_POPULAR_PROPERTIES">Property Listings</A></LI>
+                            <LI><A HREF="#OUR_TESTIMONIALS">Testimonials</A></LI>
+                        </UL>
+                    </DIV>
+                    <DIV  CLASS="FOOTER_COL_4">
+                        <H3>Follow Us</H3>
+                        <UL>
+                            <LI>Facebook</LI>
+                            <LI>Twitter</LI>
+                            <LI>Instagram</LI>
+                            <LI>YouTube</LI>
+                        </UL>
+                    </DIV>
+                </DIV>
+                <!--- COPYRIGHT SECTION --->
+                <DIV CLASS="COPYRIGHT">
+                    <P><i class="fa-regular fa-copyright"></i> Ritesh Jadhav 2024. All Rights Reserved. All content, images, and code on this website are the intellectual property of Ritesh Jadhav. Unauthorized use and/or duplication of this material without express and written permission from this site's author and/or owner is strictly prohibited.<BR> For permission requests, please contact me at riteshjadhav.292005@gmail.com.</P>
+                </DIV>
+            </DIV>
+        </DIV>
+        <!--- JAVASCRIPT --->
+        <SCRIPT SRC="SCRIPT.js"></SCRIPT>
+        <!-- Swiper JS -->
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- JS FOR TESTIMONIAL  -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!--- FONT ASWESOME SCRIPT --->   
+        <script src="https://kit.fontawesome.com/006ef9de26.js" crossorigin="anonymous"></script>
+        <!--- IONICONS --->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </BODY>
+</HTML>
