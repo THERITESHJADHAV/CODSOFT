@@ -1,0 +1,81 @@
+<HTML>
+    <HEAD>
+        <LINK REL="SHORTCUT ICON" TYPE="X-ICON" HREF="LOGO.png">
+        <!--- CSS SCRIPT --->
+        <LINK REL="STYLESHEET" HREF="STYLE.CSS">
+        
+        <TITLE>TaskNova</TITLE>
+    </HEAD>
+    <BODY>
+        <!--- LEFT STATIC CONTAINER --->
+        <DIV CLASS="BACKGROUND"></DIV>
+        <DIV CLASS="LEFT_CONTAINER">
+            <IMG CLASS="LOGO" SRC="LOGO.png">
+            <SPAN CLASS="COMPANY_NAME">TASKNOVA</SPAN>
+                <UL>
+                    <LI>
+                        <A HREF="HOME.HTML">
+                            <SPAN CLASS="ICON"><ion-icon name="home-outline"></ion-icon></SPAN>  
+                            <SPAN CLASS="TITLE">&#160;&#160;Home</SPAN>
+                        </A>
+                    </LI>
+                    <LI>
+                        <A HREF="MY_DAY.HTML">
+                            <SPAN CLASS="ICON"><ion-icon name="documents-outline"></ion-icon></SPAN>  
+                            <SPAN CLASS="TITLE">&#160;&#160;My Day</SPAN>
+                        </A>
+                    </LI>
+                    <LI>
+                        <A HREF="NEXT_7_DAYS.HTML">
+                            <SPAN CLASS="ICON"><ion-icon name="newspaper-outline"></ion-icon></SPAN>  
+                            <SPAN CLASS="TITLE">&#160;&#160;Next 7 Days</SPAN>
+                        </A>
+                    </LI>
+                    <LI>
+                        <A HREF="#">
+                            <SPAN CLASS="ICON"><ion-icon name="calendar-outline"></ion-icon></SPAN>  
+                            <SPAN CLASS="TITLE">&#160;&#160;My Calendar</SPAN>
+                        </A>
+                    </LI>
+                    <LI>
+                        <A HREF="#">
+                            <SPAN CLASS="ICON"><ion-icon name="receipt-outline"></ion-icon></SPAN>  
+                            <SPAN CLASS="TITLE">&#160;&#160;MY List</SPAN>
+                        </A>
+                    </LI>
+                </UL>
+        </DIV>
+        <!--- RIGHT CONTAINER HOME -->
+        <DIV CLASS="RIGHT_CONTAINER">
+            <IMG SRC="HOME_IMAGE.png">
+            <P CLASS="HOME_TEXT">Hii,<BR> Ready to start your day productive</P>
+            <SPAN CLASS="HOME_TEXT_1">OVERVIEW</SPAN>
+            <DIV CLASS="HOME_CONTAINER_SMALL_1">
+                <SPAN CLASS="HOME_CONTAINER_ICON"><ion-icon name="calendar-clear-outline"></ion-icon></SPAN>
+                <SPAN CLASS="HOME_CONTAINER_TITLE">0%
+                <P>&#160;&#160;Total Task &#160;&#160;Assigned</P></SPAN>
+            </DIV>
+            <DIV CLASS="HOME_CONTAINER_SMALL_2">
+                <SPAN CLASS="HOME_CONTAINER_ICON"><ion-icon name="checkmark-circle-outline"></ion-icon></SPAN>
+                <SPAN CLASS="HOME_CONTAINER_TITLE" id="totalTasks">0%
+                    <P>&#160;&#160;TASK &#160;&#160;completed</P></SPAN>
+                </SPAN>
+            </DIV>
+            <DIV CLASS="HOME_CONTAINER_SMALL_3">
+                <SPAN CLASS="HOME_CONTAINER_ICON"><ion-icon name="help-outline"></ion-icon></SPAN>
+                <SPAN CLASS="HOME_CONTAINER_TITLE" id="completedTasks">0%
+                <p>&#160;&#160;&#160;&#160;Task &#160;&#160;&#160;&#160;Pending</p></SPAN>
+            </DIV>
+            <DIV CLASS="HOME_CONTAINER_SMALL_4">
+                <SPAN CLASS="HOME_CONTAINER_ICON"><ion-icon name="close-circle-outline"></ion-icon></SPAN>
+                <SPAN CLASS="HOME_CONTAINER_TITLE" id="pendingTasks">0%
+                <p>&#160;&#160;&#160;&#160;Task &#160;&#160;&#160;&#160;Incompleted</p></SPAN>
+            </DIV>
+        </DIV>
+        <!--- JAVASCRIPT --->
+        <SCRIPT SRC="JAVASCRIPT.js"></SCRIPT>                                                                                          <!--- ALWAYS ADD JAVASCRIPT LINK BEFORE THE END OF BODY TAG --->
+        <!--- IONICONS --->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </BODY>
+</HTML>

@@ -1,0 +1,75 @@
+<HTML>
+    <HEAD>
+        <LINK REL="SHORTCUT ICON" TYPE="X-ICON" HREF="LOGO.png">
+        <!--- CSS SCRIPT --->
+        <LINK REL="STYLESHEET" HREF="STYLE.CSS">
+        <!--- IN SCRIPT ALWAYS USE SRC AND NOT HREF --->
+        <TITLE>TaskNova</TITLE>
+    </HEAD>
+    <BODY>
+        <!--- LEFT STATIC CONTAINER --->
+        <DIV CLASS="BACKGROUND"></DIV>
+        <DIV CLASS="LEFT_CONTAINER">
+            <IMG CLASS="LOGO" SRC="LOGO.png">
+            <SPAN CLASS="COMPANY_NAME">TASKNOVA</SPAN>
+                <UL>
+                    <LI>
+                        <A HREF="HOME.HTML">
+                            <SPAN CLASS="ICON"><ion-icon name="home-outline"></ion-icon></SPAN>  
+                            <SPAN CLASS="TITLE">&#160;&#160;Home</SPAN>
+                        </A>
+                    </LI>
+                    <LI>
+                        <A HREF="MY_DAY.HTML">
+                            <SPAN CLASS="ICON"><ion-icon name="documents-outline"></ion-icon></SPAN>  
+                            <SPAN CLASS="TITLE">&#160;&#160;My Day</SPAN>
+                        </A>
+                    </LI>
+                    <LI>
+                        <A HREF="NEXT_7_DAYS.HTML">
+                            <SPAN CLASS="ICON"><ion-icon name="newspaper-outline"></ion-icon></SPAN>  
+                            <SPAN CLASS="TITLE">&#160;&#160;Next 7 Days</SPAN>
+                        </A>
+                    </LI>
+                    <LI>
+                        <A HREF="#">
+                            <SPAN CLASS="ICON"><ion-icon name="calendar-outline"></ion-icon></SPAN>  
+                            <SPAN CLASS="TITLE">&#160;&#160;My Calendar</SPAN>
+                        </A>
+                    </LI>
+                    <LI>
+                        <A HREF="#">
+                            <SPAN CLASS="ICON"><ion-icon name="receipt-outline"></ion-icon></SPAN>  
+                            <SPAN CLASS="TITLE">&#160;&#160;MY List</SPAN>
+                        </A>
+                    </LI>
+                </UL>
+        </DIV>
+        <!--- START OF ALL MY TASK --->
+        <DIV CLASS="ALL_MY_TASK_CONTAINER_3">
+            <SPAN CLASS="ICON"><ion-icon name="documents-outline"></ion-icon></SPAN>  
+                            <SPAN CLASS="TITLE">&#160;&#160;My Day</SPAN>
+        </DIV>
+        <DIV CLASS="ALL_MY_TASK_CONTAINER_1">
+            <SPAN>TODAY</SPAN> 
+            <DIV CLASS="ROW">                                                                            <!--- TEXT BOX --->
+                <INPUT TYPE="TEXT" ID="title1" CLASS="INPUT" PLACEHOLDER="Add Your Text">                           <!--- PLACEHOLDER IS USED TO PRINT ALTERNATIVE TEXT --->
+                <BUTTON id="title1Btn">ADD</BUTTON>                                                 <!--- ADDTASK IS A FUNCTION WHICH TELLS WHAT TO DO ON CLICKING THAT BUTTON, CODE OF THIS FUNCTION IS WRITTEN IN JAVASCRIPT FILE -->                                    
+            </DIV>
+            <UL ID="listcontainer1" CLASS="LIST_CONTAINER">
+                <!--- <LI CLASS="CHECKED" id="CHECKED">&#160;TASK 1</LI>
+                <LI>&#160;TASK 2</LI>                                                                 THIS WAS MADE FOR CHECKING THE MANAULLY GIVEN LIST 
+                <LI>&#160;TASK 3</LI>--->
+            </UL>
+        </DIV>
+        <DIV CLASS="ALL_MY_TASK_CONTAINER_2">
+            <SPAN>Task Title :- </SPAN> 
+            <DIV CLASS="tasktext" ID="tasktext"></DIV>
+        </DIV>
+        <!--- javascript --->                                                                           <!--- ALWAYS ADD JAVASCRIPT LINK BEFORE THE END OF BODY TAG --->
+        <SCRIPT SRC="JAVASCRIPT.js"></SCRIPT>  
+        <!--- IONICONS --->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </BODY>
+</HTML>
